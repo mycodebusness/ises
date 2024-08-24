@@ -198,7 +198,7 @@ export const columns: ColumnDef<Payment>[] = [
                   variant="destructive"
                   onClick={async () => {
                     try {
-                      await deletehoraire(Number(row.original.id_horaire));
+                      //await deletehoraire(Number(row.original.id_horaire));
                       toast({
                         title: "Supprimer",
                         description: `l&apos;horaire ${row.original.id_horaire} a été supprimer avec succès`,
