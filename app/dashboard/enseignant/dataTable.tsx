@@ -54,7 +54,7 @@ import {
 } from "@/components/ui/tooltip";
 
 import { toast } from "@/components/ui/use-toast";
-import { deleteenseignant } from "@/lib/actions";
+//import { deleteenseignant } from "@/lib/actions";
 
 export const columns: ColumnDef<Payment>[] = [
   {
