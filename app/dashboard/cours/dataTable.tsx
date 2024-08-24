@@ -161,7 +161,7 @@ export const columns: ColumnDef<Payment>[] = [
                 <DialogTitle> Suppression cours</DialogTitle>
                 <DialogDescription>
                   Etes-vous sur de supprimer définitivement le cours 
-                  {row.original.id} ?
+                  {row.original.id_cours} ?
                 </DialogDescription>
               </DialogHeader>
 
@@ -175,7 +175,7 @@ export const columns: ColumnDef<Payment>[] = [
                   variant="destructive"
                   onClick={async () => {
                     try {
-                      // await deletecours(Number(row.original.id));
+                      // await deletecours(Number(row.original.id_cours));
                       toast({
                         title: "Supprimer",
                         description: `le cours ${row.original.id_cours} a été supprimer avec succès`,
