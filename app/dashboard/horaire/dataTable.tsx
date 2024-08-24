@@ -92,21 +92,21 @@ export const columns: ColumnDef<Payment>[] = [
     },
     cell: ({ row }) => <div className="capitalize">{row.original.jour  || ""}</div>,
   },
-  {
-    accessorKey: "date_horaire",
-    header: ({ column }) => {
-      return (
-        <Button
-          variant="ghost"
-          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-        >
-          date_horaire
-          <ArrowUpDown className="ml-2 h-4 w-4" />
-        </Button>
-      );
-    },
-    cell: ({ row }) => <div className="capitalize">{new Date(row.original.date_horaire).toDateString() || ""}</div>,
-  },
+//  {
+  //  accessorKey: "date_horaire",
+    //header: ({ column }) => {
+     // return (
+       // <Button
+        //  variant="ghost"
+         // onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+        //>
+          //date_horaire
+          //<ArrowUpDown className="ml-2 h-4 w-4" />
+        //</Button>
+     // );
+   // },
+   // cell: ({ row }) => <div className="capitalize">{new Date(row.original.date_horaire).toDateString() || ""}</div>,
+ // },
 
   {
     accessorKey: "heure_debut",
