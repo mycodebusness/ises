@@ -21,7 +21,7 @@ export default async function handler(
       const token = jwt.sign(
         { email, nom: data.nom, id: data.id, role },
         SECRET_KEY,
-        { expiresIn: "1h" }
+        { expiresIn: "3h" }
       );
 
       // Définir le cookie
